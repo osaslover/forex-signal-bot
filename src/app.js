@@ -1,10 +1,17 @@
-const { sendSignal } = require("./telegram");
+const express = require("express");
+const app = express();
 
-console.log("Forex Signal Bot Started");
+const PORT = process.env.PORT || 3000;
 
-setInterval(async () => {
-  console.log("Sending test signal...");
+app.get("/", (req, res) => {
+  res.send("Forex Signal Bot Running");
+});
 
-  await sendSignal("🚀 Forex bot is running!");
-  
+app.listen(PORT, () => {
+  console.log(`Server running on port ${PORT}`);
+});
+
+// Keep your bot logic here
+setInterval(() => {
+  console.log("Scanning market...");
 }, 60000);
