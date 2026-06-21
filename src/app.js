@@ -1,11 +1,5 @@
-console.log("Forex Signal Bot Started");
-
-function runBot() {
-  console.log("Scanning market...");
-}
-
-runBot();
+console.log("Bot started");
 
 setInterval(() => {
-  runBot();
-}, 60000); // runs every 60 seconds
+  console.log("Bot running...");
+}, 60000);
