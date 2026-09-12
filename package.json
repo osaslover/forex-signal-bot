@@ -1,6 +1,8 @@
 {
-  "name": "forex-signal-bot",
+  "name": "smart-trading-bot",
   "version": "1.0.0",
+  "description": "Multi-timeframe market analysis and Telegram signal bot",
+  "main": "src/app.js",
   "scripts": {
     "start": "node src/app.js"
   },
